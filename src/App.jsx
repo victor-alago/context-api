@@ -12,13 +12,25 @@ function App() {
 	// 	setCount((prev) => prev + 1)
 	// }
 
+	//const handleLogIn = () => {
+	// }
+
 	return (
-		<main>
-			<HeaderComp />
-			<div style={{ display: "flex", flexDirection: "column", gap: "1em" }}>
-				<ButtonComp text="add" onclick={() => true} />
-				Your result is dynamic count here ...
-			</div>
+		<main className="app"
+			style={{
+				display: "flex",
+				flexDirection: "column",
+				gap: "1em",
+				backgroundColor: user ? "#024d1021" : "#4d020221",
+				padding: ".5em",
+			}}
+		>
+			<HeaderComp />			
+			<ButtonComp text="add" onclick={() => true} />
+			Your result is dynamic count here ...
+			{/* You'll need another button comp here later */}
+			{user && <div className="alert">You are now logged in !!!</div>}
+			
 		</main>
 	)
 }
