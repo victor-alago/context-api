@@ -1,6 +1,8 @@
 import PropTypes from "prop-types"
 
 const ButtonComp = ({ text, onclick }) => {
+	const user = null // change this to later to the use context user ❗
+
 	const handleClick = () => {
 		onclick()
 	}
@@ -11,7 +13,7 @@ const ButtonComp = ({ text, onclick }) => {
 		>
 			{text}
 		</button>
-		)
+	)
 }
 
 ButtonComp.propTypes = {

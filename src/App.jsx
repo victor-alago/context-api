@@ -8,6 +8,8 @@ import HeaderComp from "./components/HeaderComp"
 function App() {
 	//const { count, setCount } = useContext(CountContext)
 
+	const user = null // change this to later to the use context user ❗
+
 	// const handleClick = () => {
 	// 	setCount((prev) => prev + 1)
 	// }
@@ -16,7 +18,8 @@ function App() {
 	// }
 
 	return (
-		<main className="app"
+		<main
+			className="app"
 			style={{
 				display: "flex",
 				flexDirection: "column",
@@ -25,12 +28,11 @@ function App() {
 				padding: ".5em",
 			}}
 		>
-			<HeaderComp />			
+			<HeaderComp />
 			<ButtonComp text="add" onclick={() => true} />
 			Your result is dynamic count here ...
 			{/* You'll need another button comp here later */}
 			{user && <div className="alert">You are now logged in !!!</div>}
-			
 		</main>
 	)
 }
