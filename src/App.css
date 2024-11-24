@@ -15,9 +15,19 @@
 #root span {
   position: absolute;
   top: -107px;
-  right: 35%;
+  right: 28%;
   transform: translateX(-50%);
   font-size: 9em;
   opacity: 0.7;
   filter: blur(2px);
+  width: 120px;
+  min-width: fit-content;
+  display: block;
+}
+
+.alert {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
 }
