@@ -31,3 +31,18 @@
   right: 50%;
   transform: translateX(50%);
 }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 0.5em;
+}
+
+.app.logged-in {
+  background-color: #a1fc9f33;
+}
+
+.app.logged-out {
+  background-color: #4d020221;
+}

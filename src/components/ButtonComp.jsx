@@ -1,7 +1,9 @@
 import PropTypes from "prop-types"
+import { useContext } from "react"
+import { UserContext } from "../context/UserContext"
 
 const ButtonComp = ({ text, onclick }) => {
-	const user = null // change this to later to the use context user ❗
+	const { user } = useContext(UserContext)
 
 	const handleClick = () => {
 		onclick()
